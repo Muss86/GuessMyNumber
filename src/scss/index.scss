@@ -7,11 +7,54 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: yellowgreen;
 }
+
 form {
   font-family: 'Orbitron';
   font-weight: 500;
   font-size: 20px;
   // margin-top: 200px;
   text-align: center;
+}
+
+fieldset {
+  border: 1px solid #000;
+}
+
+legend {
+  text-align: center;
+}
+
+.user-input {
+  margin: 25px auto;
+}
+
+p:first-of-type {
+  margin-top: 25px;
+}
+
+.winner {
+  color: #fff;
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
